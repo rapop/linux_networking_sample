@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     int port_number = atoi(argv[1]);
     
-    // AF_INET for the internet domain
+    // AF_INET for the internet domain, chosing IPv4 Internet protocols
     // SOCK_STREAM is for the type of socket, tcp in this case
     int server_socket_file_descriptor = socket(AF_INET, SOCK_STREAM, 0);
     if (server_socket_file_descriptor < 0)
