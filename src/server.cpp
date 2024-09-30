@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     
     // AF_INET for the internet domain, chosing IPv4 Internet protocols
     // SOCK_STREAM is for the type of socket, tcp in this case
+    // file descriptors are array subscripts into the file descriptor table
     int server_socket_file_descriptor = socket(AF_INET, SOCK_STREAM, 0);
     if (server_socket_file_descriptor < 0)
     {
