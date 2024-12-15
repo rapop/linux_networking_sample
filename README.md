@@ -1,5 +1,6 @@
 # Linux Networking Sample
 
+## Build
 `mkdir build`
 Avoids cluttering the source directory with the build files.
 
@@ -9,6 +10,10 @@ Reads the CMakeLists.txt and generate build files.
 
 `cmake --build .`
 Call the build system to compile/link the project.
+
+## Test
+`./build/networking_server 51715`
+`./build/networking_client localhost 51715`
 
 ## Notes
 
